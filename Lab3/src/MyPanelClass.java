@@ -5,11 +5,11 @@ import javax.swing.JPanel;
  
 public class MyPanelClass extends JPanel {
             /**
-	 * 
-	 */
-	private static final long serialVersionUID = 7057541440811488699L;
+     * 
+     */
+    private static final long serialVersionUID = 7057541440811488699L;
 
-			public void paintComponent(Graphics g) {
+            public void paintComponent(Graphics g) {
                         super.paintComponent(g);
  
                         //Compute interior coordinates
@@ -25,11 +25,19 @@ public class MyPanelClass extends JPanel {
                         g.setColor(Color.BLACK);
                         g.fillRect(x1, y1, width + 1, height + 1);
                         //Draw a border
-                        g.setColor(Color.YELLOW);
-                        g.drawRect(x1, y1, width, height);
+                        //g.setColor(Color.YELLOW);
+                        //g.drawRect(x1, y1, width, height);
                         //Other border
-                        g.setColor(Color.ORANGE);
-                        g.drawRect(x1 + 8, y1 + 8, width - 20, height - 20);
+                        //g.setColor(Color.ORANGE);
+                        //g.drawRect(x1 + 8, y1 + 8, width - 20, height - 20);
+                        //diagonal line 1
+                        //g.setColor(Color.WHITE);
+                        //g.drawLine(x1, y1, x2, y2);
+                        //diagonal line 2
+                        //g.setColor(Color.RED);
+                        //g.drawLine(x1 +180, y1, x2-180, y2); 
+                        g.setColor(Color.LIGHT_GRAY);
+                        g.fillOval(width/2-27,height/2-27, 55,55);
             }
-			
+            
 }
